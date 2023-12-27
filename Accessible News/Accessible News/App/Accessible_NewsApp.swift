@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct Accessible_NewsApp: App {
+    
+    // MARK: - Properties
+    @StateObject private var viewModel = NewsPageViewModel()
+    
+    // MARK: - Body
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NewsPageView()
+                .environmentObject(viewModel)
         }
     }
 }

@@ -8,17 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		C4DE854B2B3C6763009C9576 /* Accessible_NewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DE854A2B3C6763009C9576 /* Accessible_NewsApp.swift */; };
-		C4DE854D2B3C6763009C9576 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DE854C2B3C6763009C9576 /* ContentView.swift */; };
+		C4DE854D2B3C6763009C9576 /* NewsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DE854C2B3C6763009C9576 /* NewsPageView.swift */; };
 		C4DE854F2B3C6765009C9576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DE854E2B3C6765009C9576 /* Assets.xcassets */; };
 		C4DE85522B3C6765009C9576 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DE85512B3C6765009C9576 /* Preview Assets.xcassets */; };
+		C4DE85592B3C6D40009C9576 /* NewsPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DE85582B3C6D40009C9576 /* NewsPageViewModel.swift */; };
+		C4DE855C2B3C6DD0009C9576 /* NetworkingPackageGeneric in Frameworks */ = {isa = PBXBuildFile; productRef = C4DE855B2B3C6DD0009C9576 /* NetworkingPackageGeneric */; };
+		C4DE855E2B3C6EE6009C9576 /* NewsPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DE855D2B3C6EE6009C9576 /* NewsPageModel.swift */; };
+		C4DE85602B3C932E009C9576 /* DetailsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DE855F2B3C932D009C9576 /* DetailsPageView.swift */; };
+		C4DE85622B3C93CD009C9576 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DE85612B3C93CD009C9576 /* NewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C4DE85472B3C6763009C9576 /* Accessible News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Accessible News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DE854A2B3C6763009C9576 /* Accessible_NewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessible_NewsApp.swift; sourceTree = "<group>"; };
-		C4DE854C2B3C6763009C9576 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C4DE854C2B3C6763009C9576 /* NewsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPageView.swift; sourceTree = "<group>"; };
 		C4DE854E2B3C6765009C9576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4DE85512B3C6765009C9576 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4DE85582B3C6D40009C9576 /* NewsPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPageViewModel.swift; sourceTree = "<group>"; };
+		C4DE855D2B3C6EE6009C9576 /* NewsPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPageModel.swift; sourceTree = "<group>"; };
+		C4DE855F2B3C932D009C9576 /* DetailsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPageView.swift; sourceTree = "<group>"; };
+		C4DE85612B3C93CD009C9576 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DE855C2B3C6DD0009C9576 /* NetworkingPackageGeneric in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +61,11 @@
 		C4DE85492B3C6763009C9576 /* Accessible News */ = {
 			isa = PBXGroup;
 			children = (
-				C4DE854A2B3C6763009C9576 /* Accessible_NewsApp.swift */,
-				C4DE854C2B3C6763009C9576 /* ContentView.swift */,
+				C4DE85642B3C941E009C9576 /* App */,
+				C4DE85632B3C9407009C9576 /* NewsPage */,
 				C4DE854E2B3C6765009C9576 /* Assets.xcassets */,
 				C4DE85502B3C6765009C9576 /* Preview Content */,
+				C4DE855F2B3C932D009C9576 /* DetailsPageView.swift */,
 			);
 			path = "Accessible News";
 			sourceTree = "<group>";
@@ -65,6 +76,25 @@
 				C4DE85512B3C6765009C9576 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4DE85632B3C9407009C9576 /* NewsPage */ = {
+			isa = PBXGroup;
+			children = (
+				C4DE85612B3C93CD009C9576 /* NewsTableViewCell.swift */,
+				C4DE855D2B3C6EE6009C9576 /* NewsPageModel.swift */,
+				C4DE854C2B3C6763009C9576 /* NewsPageView.swift */,
+				C4DE85582B3C6D40009C9576 /* NewsPageViewModel.swift */,
+			);
+			path = NewsPage;
+			sourceTree = "<group>";
+		};
+		C4DE85642B3C941E009C9576 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C4DE854A2B3C6763009C9576 /* Accessible_NewsApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +113,9 @@
 			dependencies = (
 			);
 			name = "Accessible News";
+			packageProductDependencies = (
+				C4DE855B2B3C6DD0009C9576 /* NetworkingPackageGeneric */,
+			);
 			productName = "Accessible News";
 			productReference = C4DE85472B3C6763009C9576 /* Accessible News.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +144,9 @@
 				Base,
 			);
 			mainGroup = C4DE853E2B3C6763009C9576;
+			packageReferences = (
+				C4DE855A2B3C6DD0009C9576 /* XCRemoteSwiftPackageReference "networking-package-generic" */,
+			);
 			productRefGroup = C4DE85482B3C6763009C9576 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4DE854D2B3C6763009C9576 /* ContentView.swift in Sources */,
+				C4DE854D2B3C6763009C9576 /* NewsPageView.swift in Sources */,
+				C4DE855E2B3C6EE6009C9576 /* NewsPageModel.swift in Sources */,
+				C4DE85622B3C93CD009C9576 /* NewsTableViewCell.swift in Sources */,
+				C4DE85592B3C6D40009C9576 /* NewsPageViewModel.swift in Sources */,
 				C4DE854B2B3C6763009C9576 /* Accessible_NewsApp.swift in Sources */,
+				C4DE85602B3C932E009C9576 /* DetailsPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +384,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C4DE855A2B3C6DD0009C9576 /* XCRemoteSwiftPackageReference "networking-package-generic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/levanl/networking-package-generic.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C4DE855B2B3C6DD0009C9576 /* NetworkingPackageGeneric */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4DE855A2B3C6DD0009C9576 /* XCRemoteSwiftPackageReference "networking-package-generic" */;
+			productName = NetworkingPackageGeneric;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C4DE853F2B3C6763009C9576 /* Project object */;
 }

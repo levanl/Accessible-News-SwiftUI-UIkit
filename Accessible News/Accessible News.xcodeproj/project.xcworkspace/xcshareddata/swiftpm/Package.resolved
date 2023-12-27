@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "networking-package-generic",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/levanl/networking-package-generic.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3e43c5d0b132b0b9c6f5c603dfe70fa92bb35452"
+      }
+    }
+  ],
+  "version" : 2
+}
