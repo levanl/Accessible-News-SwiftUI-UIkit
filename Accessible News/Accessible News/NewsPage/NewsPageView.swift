@@ -18,6 +18,7 @@ struct NewsPageView: View {
             NewsTableViewRepresentable(data: viewModel.articles)
                 .padding()
                 .navigationBarTitle("News")
+                .accessibility(label: Text("News Feed"))
         }
     }
 }
